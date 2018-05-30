@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GrW-5c-hER">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View-->
+        <scene sceneID="SDl-Ww-G72">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="GrW-5c-hER" customClass="ProfileView" customModule="WRMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dTl-nF-Wk6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1mU-LQ-AcS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="GrW-5c-hER" id="ERM-nA-wKo"/>
+                                    <outlet property="delegate" destination="GrW-5c-hER" id="vRS-oM-hlj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OWV-pM-4RW" firstAttribute="trailing" secondItem="1mU-LQ-AcS" secondAttribute="trailing" id="CWM-C5-YA8"/>
+                            <constraint firstItem="OWV-pM-4RW" firstAttribute="bottom" secondItem="1mU-LQ-AcS" secondAttribute="bottom" id="R8X-sh-HtJ"/>
+                            <constraint firstItem="1mU-LQ-AcS" firstAttribute="top" secondItem="OWV-pM-4RW" secondAttribute="top" id="VY2-iU-P97"/>
+                            <constraint firstItem="1mU-LQ-AcS" firstAttribute="leading" secondItem="OWV-pM-4RW" secondAttribute="leading" id="tXn-ez-r13"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OWV-pM-4RW"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="1mU-LQ-AcS" id="Tse-hE-B0A"/>
+                        <segue destination="l9U-VM-8wX" kind="show" identifier="showProfileToProfileEditSegue" id="nXO-so-9qR"/>
+                        <segue destination="5zb-98-H8x" kind="show" identifier="showProfileToNotificationSetupSegue" id="SNu-of-CCS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0H7-u4-xvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="168.6656671664168"/>
+        </scene>
+        <!--ProfileEdit-->
+        <scene sceneID="iFd-bU-d3g">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileEdit" id="l9U-VM-8wX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yfl-7Y-Egr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="168"/>
+        </scene>
+        <!--NotificationSetup-->
+        <scene sceneID="q3N-ET-y00">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NotificationSetup" id="5zb-98-H8x" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zpa-wo-hTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="268"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,75 @@
+//
+//  Localizable.strings
+//  WRMessenger
+//
+//  Created by Brothers Harhun on 5/22/18.
+//  Copyright © 2018 Iseck. All rights reserved.
+//
+
+// MARK: - Tab Bar
+"TabBar.Contacts" = "Контакты";
+"TabBar.Chats" = "Чаты";
+"TabBar.Profile" = "Профиль";
+"TabBar.Settings" = "Настройки";
+
+// MARK: - Global
+"Global.Ok" = "Ок";
+
+// MARK: - Login
+"Login.title" = "Авторизация";
+"Login.LoginTextField.placeholder" = "Логин";
+"Login.PasswordTextField.placeholder" = "Пароль";
+"Login.RegistrationButton.title" = "Регистрация";
+"Login.Error.title" = "Ошибка";
+"Login.Error.emptyLogin" = "Укажите логин";
+"Login.Error.emptyPassword" = "Укажите пароль";
+"Login.Error.incorrentLogin" = "Неверный логин";
+"Login.Error.incorrectPassword" = "Неверный пароль";
+
+// MARK: - Registration
+"Registration.title" = "Регистрация";
+"Registration.FirstNameTextField.placeholder" = "Имя";
+"Registration.LastNameTextField.placeholder" = "Фамилия";
+"Registration.EmailTextField.placeholder" = "Электронная почта";
+"Registration.PhoneNameTextField.placeholder" = "Телефон";
+"Registration.PasswordTextField.placeholder" = "Пароль";
+"Registration.ConfirmPasswordTextField.placeholder" = "Подтвердить пароль";
+"Registration.Error.title" = "Ошибка";
+"Registration.Error.emptyField" = "Пустое поле";
+
+// MARK: - Settings module
+"Settings.NavigationItem.Title" = "Настройки";
+"Settings.TableViewCell.Logout" = "Выход из учетной записи";
+"Settings.ActionSheet.SelectPhoto" = "Выбрать фото";
+"Settings.ActionSheet.CreatePhoto" = "Сделать фото";
+"Settings.ActionSheet.RemovePhoto" = "Удалить";
+"Settings.ActionSheet.Cancel" = "Отмена";
+"Settings.TableViewCell.NotificationSetup" = "Настройка уведомлений";
+"Settings.TableViewCell.Language" = "Язык";
+
+// MARK: - Profile edit
+"ProfileEdit.NavigationItem.Title" = "Настройки";
+"ProfileEdit.FirstNameTextField.Placeholder" = "Имя";
+"ProfileEdit.LastNameTextField.Placeholder" = "Фамилия";
+"ProfileEdit.SaveButton.Placeholder" = "Сохранить";
+"ProfileEdit.Alert.SuccessfullyUpdated" = "Данные успешно обновлены";
+"ProfileEdit.Alert.Success" = "Успех";
+
+// MARK: - Users list module
+"UsersList.NavigationItem.Title" = "Пользователи";
+"UsersList.Search.Placeholder" = "Поиск";
+"UsersList.Search.AddContactSuccess" = "Контакт успешно добавлен";
+"UsersList.Search.AddContactFailure" = "Произошла ошибка при добавлении контакта";
+
+// MARK: - Notification Settings
+"NotificationSetup.Title" = "Настройки уведомлений";
+"NotificationSetup.ResetButton.Title" = "Сброс";
+"NotificationSetup.Messages.Title" = "Сообщения";
+"NotificationSetup.Messages.Notifications" = "Уведомления";
+"NotificationSetup.Messages.Sound" = "Звук";
+"NotificationSetup.GroupChats.Title" = "Групповые чаты";
+"NotificationSetup.GroupChats.Notifications" = "Уведомления";
+"NotificationSetup.GroupChats.Sound" = "Звук";
+"NotificationSetup.GlobalSettings.Title" = "Настройки";
+"NotificationSetup.GlobalSettings.Notifications" = "Уведомления";
+"NotificationSetup.GlobalSettings.Vibration" = "Вибро";

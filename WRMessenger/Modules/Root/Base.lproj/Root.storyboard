@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wE8-cX-vKf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View-->
+        <scene sceneID="IRH-Rr-YZh">
+            <objects>
+                <viewController id="wE8-cX-vKf" customClass="RootView" customModule="WRMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rjc-UX-Bx0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="m93-ZN-Dxq">
+                                <rect key="frame" x="169" y="325" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.058823529409999999" green="0.69019607839999997" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m93-ZN-Dxq" firstAttribute="centerY" secondItem="10Y-fb-R1m" secondAttribute="centerY" id="OKE-EP-wK8"/>
+                            <constraint firstItem="m93-ZN-Dxq" firstAttribute="centerX" secondItem="10Y-fb-R1m" secondAttribute="centerX" id="Ubl-HO-twN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="10Y-fb-R1m"/>
+                    </view>
+                    <connections>
+                        <outlet property="spinnerView" destination="m93-ZN-Dxq" id="dNK-oG-zPq"/>
+                        <segue destination="k54-Iw-l7i" kind="show" identifier="showRootToLoginSegue" animates="NO" id="wto-kB-rrd"/>
+                        <segue destination="PbY-Ik-7pR" kind="show" identifier="showRootToMainAppSegue" animates="NO" id="CS1-44-ItE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BuN-ez-bF6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="153"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="xWw-hh-gAb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="k54-Iw-l7i" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n6h-rU-SZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-64"/>
+        </scene>
+        <!--App-->
+        <scene sceneID="NcC-qC-Yle">
+            <objects>
+                <viewControllerPlaceholder storyboardName="App" id="PbY-Ik-7pR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgn-Dc-bWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901" y="277"/>
+        </scene>
+    </scenes>
+</document>

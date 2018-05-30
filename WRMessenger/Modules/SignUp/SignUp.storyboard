@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ceS-0m-W21">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View-->
+        <scene sceneID="oc6-3y-I2G">
+            <objects>
+                <viewController id="ceS-0m-W21" customClass="SignUpView" customModule="WRMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Wz-V5-Ez3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSy-ze-3wQ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lG-EP-eao">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="556"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="2t7-nr-wH2">
+                                                <rect key="frame" x="132" y="24" width="56" height="81"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="81" id="O8X-cI-hgC"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="9zJ-An-Cqh" userLabel="Fields Stack View">
+                                                <rect key="frame" x="38" y="117" width="244" height="322"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RmD-Ob-uh8" customClass="DesignableTextField" customModule="WRMessenger" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="244" height="32"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="6fO-AQ-Cai"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="login"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textInsetX">
+                                                                <real key="value" value="28"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableBottomBorder" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5oU-Uw-G90" customClass="DesignableTextField" customModule="WRMessenger" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="58" width="244" height="32"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="VzW-jc-LBF"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="login"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textInsetX">
+                                                                <real key="value" value="28"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableBottomBorder" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="emai" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1aI-1p-jPU" customClass="DesignableTextField" customModule="WRMessenger" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="116" width="244" height="32"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="XqJ-ax-ez7"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="login"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textInsetX">
+                                                                <real key="value" value="28"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableBottomBorder" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qgj-si-ZUe" customClass="DesignableTextField" customModule="WRMessenger" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="174" width="244" height="32"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="y2A-IR-7iv"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="login"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textInsetX">
+                                                                <real key="value" value="28"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableBottomBorder" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4m9-CX-0Zq" customClass="DesignableTextField" customModule="WRMessenger" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="232" width="244" height="32"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="7WO-wg-43N"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textInsetX">
+                                                                <real key="value" value="28"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableBottomBorder" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xsb-uL-hWj" customClass="DesignableTextField" customModule="WRMessenger" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="290" width="244" height="32"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="7JM-uD-B2t"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textInsetX">
+                                                                <real key="value" value="28"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableBottomBorder" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="244" id="VMV-JE-8Pd"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWO-K8-NmH">
+                                                <rect key="frame" x="143.5" y="463" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="Fs0-Ew-HK3"/>
+                                                </constraints>
+                                                <state key="normal" image="goNext"/>
+                                                <connections>
+                                                    <action selector="tapNextButton:" destination="ceS-0m-W21" eventType="touchUpInside" id="mju-HJ-8zs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="9zJ-An-Cqh" firstAttribute="centerY" secondItem="5lG-EP-eao" secondAttribute="centerY" id="9cC-qj-Bbh"/>
+                                            <constraint firstItem="sWO-K8-NmH" firstAttribute="centerX" secondItem="5lG-EP-eao" secondAttribute="centerX" id="Wwo-dx-IW6"/>
+                                            <constraint firstItem="2t7-nr-wH2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5lG-EP-eao" secondAttribute="top" constant="24" id="ea4-pV-spk"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sWO-K8-NmH" secondAttribute="bottom" constant="24" id="eaT-4S-vYR"/>
+                                            <constraint firstItem="sWO-K8-NmH" firstAttribute="top" secondItem="9zJ-An-Cqh" secondAttribute="bottom" constant="24" id="nSJ-uB-yVq"/>
+                                            <constraint firstItem="9zJ-An-Cqh" firstAttribute="top" secondItem="2t7-nr-wH2" secondAttribute="bottom" constant="12" id="wHK-Vj-2Gg"/>
+                                            <constraint firstItem="2t7-nr-wH2" firstAttribute="centerX" secondItem="5lG-EP-eao" secondAttribute="centerX" id="y6a-mr-43g"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="5lG-EP-eao" secondAttribute="bottom" id="4Yj-Wv-jTH"/>
+                                    <constraint firstAttribute="trailing" secondItem="5lG-EP-eao" secondAttribute="trailing" id="HUm-DL-O0Y"/>
+                                    <constraint firstItem="5lG-EP-eao" firstAttribute="leading" secondItem="LSy-ze-3wQ" secondAttribute="leading" id="Tzv-ir-B2n"/>
+                                    <constraint firstItem="5lG-EP-eao" firstAttribute="top" secondItem="LSy-ze-3wQ" secondAttribute="top" id="YKW-jW-mr9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.058823529409999999" green="0.69019607839999997" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9zJ-An-Cqh" firstAttribute="centerX" secondItem="C67-Eb-eVD" secondAttribute="centerX" id="36a-uy-pAn"/>
+                            <constraint firstItem="LSy-ze-3wQ" firstAttribute="leading" secondItem="C67-Eb-eVD" secondAttribute="leading" id="4JR-UG-9Rm"/>
+                            <constraint firstItem="C67-Eb-eVD" firstAttribute="bottom" secondItem="LSy-ze-3wQ" secondAttribute="bottom" id="Be2-qI-aMo"/>
+                            <constraint firstItem="5lG-EP-eao" firstAttribute="width" secondItem="C67-Eb-eVD" secondAttribute="width" id="O4Z-gG-uJk"/>
+                            <constraint firstItem="LSy-ze-3wQ" firstAttribute="top" secondItem="C67-Eb-eVD" secondAttribute="top" id="V6N-JI-vSI"/>
+                            <constraint firstItem="5lG-EP-eao" firstAttribute="height" secondItem="C67-Eb-eVD" secondAttribute="height" priority="250" id="dnp-ff-LHa"/>
+                            <constraint firstItem="C67-Eb-eVD" firstAttribute="trailing" secondItem="LSy-ze-3wQ" secondAttribute="trailing" id="fjG-KN-qTg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C67-Eb-eVD"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="Xsb-uL-hWj" id="cEc-v9-uf0"/>
+                        <outlet property="emailTextField" destination="1aI-1p-jPU" id="g6j-y8-LcN"/>
+                        <outlet property="firstNameTextField" destination="RmD-Ob-uh8" id="k9C-6j-zHh"/>
+                        <outlet property="lastNameTextField" destination="5oU-Uw-G90" id="83e-bq-oe5"/>
+                        <outlet property="nextButton" destination="sWO-K8-NmH" id="pdj-TX-G8c"/>
+                        <outlet property="passwordTextField" destination="4m9-CX-0Zq" id="Y3n-xd-UwZ"/>
+                        <outlet property="phoneTextField" destination="Qgj-si-ZUe" id="lf2-qE-C52"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbV-1d-n2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999.20000000000005" y="176.76161919040482"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="goNext" width="32" height="32"/>
+        <image name="login" width="14" height="20"/>
+        <image name="logo" width="56" height="81"/>
+        <image name="password" width="14" height="20"/>
+    </resources>
+</document>

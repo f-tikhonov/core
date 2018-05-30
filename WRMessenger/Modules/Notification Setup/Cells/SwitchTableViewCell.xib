@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="SwitchTableViewCell" customModule="WRMessenger" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kfd-vi-QIK">
+                        <rect key="frame" x="296" y="30.5" width="51" height="31"/>
+                        <connections>
+                            <action selector="handleSwitchAction:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Nbk-D9-daK"/>
+                        </connections>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHB-RZ-mUI">
+                        <rect key="frame" x="16" y="35.5" width="268" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Kfd-vi-QIK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="5s1-6O-HOH"/>
+                    <constraint firstItem="mHB-RZ-mUI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DLg-hn-pB2"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="mHB-RZ-mUI" secondAttribute="bottom" constant="4" id="Mlx-m7-FcU"/>
+                    <constraint firstItem="Kfd-vi-QIK" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="VPu-FI-U5T"/>
+                    <constraint firstItem="Kfd-vi-QIK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bRG-k5-s6P"/>
+                    <constraint firstItem="mHB-RZ-mUI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="j7w-V2-gcE"/>
+                    <constraint firstItem="Kfd-vi-QIK" firstAttribute="leading" secondItem="mHB-RZ-mUI" secondAttribute="trailing" constant="12" id="kgd-xw-LOg"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Kfd-vi-QIK" secondAttribute="bottom" constant="4" id="q4H-py-10d"/>
+                    <constraint firstItem="mHB-RZ-mUI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="ztI-fl-qjd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="switchView" destination="Kfd-vi-QIK" id="Ejf-li-EzJ"/>
+                <outlet property="titleLabel" destination="mHB-RZ-mUI" id="06f-dw-7GK"/>
+            </connections>
+            <point key="canvasLocation" x="-17" y="-3"/>
+        </tableViewCell>
+    </objects>
+</document>
